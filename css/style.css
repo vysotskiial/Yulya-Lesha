@@ -13990,7 +13990,8 @@ textarea.form-control {
 
 .hero-banner {
   height: 100vh;
-  background-image: url(../images/Kolomenskoe.jpg);
+	width: 80%;
+  background-image: url(../images/Kolomenskoe_edit.jpg);
   background-size: cover;
   background-position: top center;
 }

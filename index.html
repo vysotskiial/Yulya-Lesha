@@ -49,14 +49,10 @@
 		<!-- <a class="player"
 			data-property="{videoURL:'https://www.youtube.com/watch?v=Mjjw19B7rMk',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a> -->
 		<div class="container">
-			<div class="row js-fullheight justify-content-center d-flex align-items-center">
+			<div class="row js-fullheight justify-content-top d-flex align-items-center">
 				<div class="col-md-12">
 					<div class="text text-center">
-						<div class="icon">
-							<span class="flaticon-rose-outline-variant-with-vines-and-leaves"></span>
-						</div>
 						<span class="subheading">свадьба</span>
-						<h1>Леша &amp; Юля</h1>
 						<div id="timer" class="d-flex">
 							<div class="time" id="days"></div>
 							<div class="time pl-3" id="hours"></div>
@@ -166,10 +162,9 @@
 				<div class="col-md-12">
 					<div class="row justify-content-center">
 						<div class="col-md-12 text-center heading-section ftco-animate">
-							<span class="clone">Юля и Леша</span>
-							<h2 class="mb-3">Юля и Леша
-							</h2>
-							<h3>Ждем Вас!<h3>
+							<button id="confettiBtn">
+								<h2>Обязательно приду</h2>
+							</button>
 						</div>
 					</div>
 
@@ -199,6 +194,8 @@
 	<script src="js/jquery.animateNumber.min.js"></script>
 	<script src="js/jquery.mb.YTPlayer.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@4.3.1/tsparticles.confetti.bundle.min.js"></script>
+	<script src="js/confetti.js"></script>
 	<script
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 	<script src="js/google-map.js"></script>
