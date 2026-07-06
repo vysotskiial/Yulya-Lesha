@@ -46,13 +46,11 @@
 
 	<section class="video-hero hero-banner">
 		<div class="overlay"></div>
-		<!-- <a class="player"
-			data-property="{videoURL:'https://www.youtube.com/watch?v=Mjjw19B7rMk',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a> -->
 		<div class="container">
-			<div class="row js-fullheight justify-content-top d-flex align-items-center">
+			<div class="row js-fullheight justify-content-top d-flex">
 				<div class="col-md-12">
-					<div class="text text-center">
-						<span class="subheading">свадьба</span>
+					<div class="text text-right">
+						<span class="subheading">свадьба через</span>
 						<div id="timer" class="d-flex">
 							<div class="time" id="days"></div>
 							<div class="time pl-3" id="hours"></div>
@@ -81,13 +79,7 @@
 											<span class="subheading mb-4">приглашаем на свадьбу</span>
 											<h2 class="mb-4">Юли <span>и</span> Леши</h2>
 											<span class="icon flaticon-rose-variant-outline-with-vines"></span>
-											<p class="time mb-4"><span>16 | июля | 2023</span></p>
-											<p class="px-3">You are invited to celebrate the grace of Jesus, the love of
-												God and the
-												presence of the Holy Spirit.</p>
-											<span class="subheading mb-5">Starting at 4:30 pm to 8:30 pm</span>
-											<span class="subheading mb-5">City Dock and Lake Pavilion <br>
-												REMOVE ALL THIS AND ADD SPACE
+											<p class="time mb-4"><span>16 июля </span></p>
 											</span>
 										</div>
 									</div>
@@ -113,9 +105,8 @@
 					<div class="place img" style="background-image: url(images/TODO.jfif);">
 						<div class="text text-center">
 							<span class="icon flaticon-wedding-kiss"></span>
-							<h3>Церемония</h3>
-							<p><span>16 июля 2026</span><br><span>13:30 -- 15:30</span></p>
-							<p><span>Коломенское, дворец Алексея Михайловича<br></span></p>
+							<p><span>16 июля</span><br><span>13:30 -- 15:30</span></p>
+							<p><span>Коломенское, дворец</span><br><span>Алексея Михайловича<br></span></p>
 							<p><a href="https://yandex.ru/maps/-/CTq6JJIh" class="btn-custom" target="_blank">На карте</a></p>
 						</div>
 					</div>
@@ -125,8 +116,6 @@
 	</section>
 
 	<section class="ftco-section bg-section" id="TODOBanquet">
-		<div class="overlay-top" style="background-image: url(images/top-bg.jpg);"></div>
-		<div class="overlay-bottom" style="background-image: url(images/bottom-bg.jpg);"></div>
 		<div class="container">
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-12 text-center heading-section ftco-animate">
@@ -138,10 +127,9 @@
 					<div class="row">
 						<div class="col-md-8 offset-md-2 d-flex align-items-stretch">
 							<div class="bride-groom ftco-animate">
-								<div class="text mt-4 px-4">
-									<h2></h2>
-									<h3>Банкет</h3>
-									<p><span>состоится 16 июля 2026</span><br><span>17:00 -- 24:00</span></p>
+								<div class="text text-center mt-4 px-4">
+									<p><br><p>
+									<p><span>16 июля</span><br><span>13:30 -- 15:30</span></p>
 									<p><span>Банкетный зал "Артико Холл"<br></span></p>
 									<p><a href="https://yandex.ru/maps/-/CTq6RQ33" class="btn-custom" target="_blank">На карте</a></p>
 								</div>
@@ -162,8 +150,8 @@
 				<div class="col-md-12">
 					<div class="row justify-content-center">
 						<div class="col-md-12 text-center heading-section ftco-animate">
-							<button id="confettiBtn">
-								<h2>Обязательно приду</h2>
+							<button class="anything" id="confettiBtn">
+								<h2>Обязательно приду!</h2>
 							</button>
 						</div>
 					</div>
@@ -201,6 +189,22 @@
 	<script src="js/google-map.js"></script>
 
 	<script src="js/main.js"></script>
+
+	<script>
+		//Array of images which you want to show: Use path you want.
+		var images=new Array('images/Kolomenskoe.jpg','images/Izmaylovo.jpg', "images/Rechnoy.jpg");
+		var nextimage=0;
+		doSlideshow();
+
+		function doSlideshow(){
+			if(nextimage>=images.length){nextimage=0;}
+			$('.hero-banner')
+				.css('background-image','url("'+images[nextimage++]+'")')
+				.fadeIn(1000,function(){
+					setTimeout(doSlideshow,2000);
+				});
+		}
+	</script>
 
 </body>
 

@@ -246,6 +246,14 @@ button {
   border-radius: 0;
 }
 
+button.anything {
+    border: 2px solid #ff2020;
+    color: white;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
 button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
@@ -7724,6 +7732,7 @@ button.bg-dark:focus {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
+	justify-content: flex-end;
 }
 
 .d-inline-flex {
@@ -11394,6 +11403,7 @@ button.bg-dark:focus {
 
 .text-right {
   text-align: right !important;
+	top: 0;
 }
 
 .text-center {
@@ -12177,6 +12187,7 @@ h5,
 #timer {
   width: 60%;
   margin: 0 auto;
+	right: 0;
 }
 
 @media (max-width: 991.98px) {
@@ -12186,9 +12197,9 @@ h5,
 }
 
 #timer .time {
-  width: 25%;
-  font-size: 40px;
-  font-weight: 500;
+  width: 20%;
+  font-size: 8px;
+  font-weight: 300;
   border-left: 1px solid rgba(0, 0, 0, 0.05);
   color: #fff;
   margin-bottom: 0;
@@ -12196,16 +12207,17 @@ h5,
 
 @media (max-width: 991.98px) {
   #timer .time {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
 #timer .time:first-child {
   border-left: transparent;
+  border-right: transparent;
 }
 
 #timer .time span {
-  font-size: 12px;
+  font-size: 10px;
   display: block;
   color: #fff;
   letter-spacing: 2px;
@@ -13990,7 +14002,7 @@ textarea.form-control {
 
 .hero-banner {
   height: 100vh;
-	width: 80%;
+	width: 100%;
   background-image: url(../images/Kolomenskoe_edit.jpg);
   background-size: cover;
   background-position: top center;
